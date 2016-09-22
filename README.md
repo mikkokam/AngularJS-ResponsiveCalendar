@@ -22,7 +22,7 @@ Bower Install: `bower install ng-responsive-calendar`
 
 Load the necessary dependent files:
 
-    -- <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css"/> --
+    --REMOVING THIS-- <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css"/> --
     <link rel="stylesheet" href="<bower lib installation path>/ng-responsive-calendar/dist/css/calendar.min.css"/>
     <script src="../lib/angular/angular.js"></script>
     <script src="<bower lib installation path>/ng-responsive-calendar/dist/js/calendar-tpls.min.js"></script>
