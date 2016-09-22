@@ -1,7 +1,10 @@
-angular.module('calendarDemoApp', ['ui.rCalendar']);
+angular.module('calendarDemoApp', ['ui.rCalendar', 'ngMaterial']);
 
 angular.module('calendarDemoApp').controller('CalendarDemoCtrl', ['$scope', function ($scope) {
     'use strict';
+
+    console.log("demo");
+    
     $scope.changeMode = function (mode) {
         $scope.mode = mode;
     };

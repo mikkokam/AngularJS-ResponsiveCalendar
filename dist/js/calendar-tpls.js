@@ -1012,13 +1012,13 @@ angular.module('ui.rCalendar', ['ui.rCalendar.tpls'])
 angular.module("template/rcalendar/calendar.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/rcalendar/calendar.html",
     "<div ng-switch=\"calendarMode\">\n" +
-    "    <div class=\"row calendar-navbar\">\n" +
-    "        <div class=\"nav-left col-xs-2\">\n" +
+    "    <div layout=\"row\" class=\"calendar-navbar\">\n" +
+    "        <div class=\"nav-left\" flex=\"20\">\n" +
     "            <button type=\"button\" class=\"btn btn-default btn-sm\" ng-click=\"move(-1)\"><i\n" +
     "                    class=\"glyphicon glyphicon-chevron-left\"></i></button>\n" +
     "        </div>\n" +
-    "        <div class=\"calendar-header col-xs-8\">{{title}}</div>\n" +
-    "        <div class=\"nav-right col-xs-2\">\n" +
+    "        <div class=\"calendar-header\" flex=\"80\">{{title}}</div>\n" +
+    "        <div class=\"nav-right\" flex=\"20\">\n" +
     "            <button type=\"button\" class=\"btn btn-default btn-sm\" ng-click=\"move(1)\"><i\n" +
     "                    class=\"glyphicon glyphicon-chevron-right\"></i></button>\n" +
     "        </div>\n" +
@@ -1081,8 +1081,8 @@ angular.module("template/rcalendar/day.html", []).run(["$templateCache", functio
 
 angular.module("template/rcalendar/month.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/rcalendar/month.html",
-    "<div>\n" +
-    "    <table class=\"table table-bordered table-fixed monthview-datetable monthview-datetable\">\n" +
+    "<div flex layout=\"column\">\n" +
+    "    <table flex=\"100\" class=\"monthview-datetable monthview-datetable\">\n" +
     "        <thead>\n" +
     "        <tr>\n" +
     "            <th ng-show=\"showWeeks\" class=\"calendar-week-column text-center\">#</th>\n" +
@@ -1120,7 +1120,8 @@ angular.module("template/rcalendar/month.html", []).run(["$templateCache", funct
     "            </table>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("template/rcalendar/week.html", []).run(["$templateCache", function($templateCache) {

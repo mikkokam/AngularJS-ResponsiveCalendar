@@ -15,6 +15,9 @@
 .table-fixed {
     table-layout: fixed;
 }
+.monthview-datetable {
+    width: 100%;
+}
 
 .no-event-label {
     font-weight: bold;
@@ -168,4 +171,3 @@
         font-size: 12px;
     }
 }
-

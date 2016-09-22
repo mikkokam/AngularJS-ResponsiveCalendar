@@ -17,8 +17,7 @@
         "responsive"
     ],
     "dependencies": {
-        "angular": "~1.2",
-        "bootstrap": "~3.0.3"
+        "angular": "~1.5"
     },
     "license": "MIT",
     "ignore": [
